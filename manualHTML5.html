@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Manual HTML5</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Manual de HTML5</h1>
+    <p>
+        Este site contém dicas sobre HTML5.
+        <br>
+        Você pode <a href="manual.zip">baixar os arquivos</a> que compõem este site para entender como os comandos funcionam.
+        <br>
+        Por favor utilize somente para estudo.
+    </p>
+    <hr>
+    <h2>Como criar uma linha horizontal</h2>
+    <div>
+        <p>
+            &lthr&gt é uma tag que cria uma linha horizontal como a de cima &uarr;
+        </p>
+    </div>
+    <hr>
+    <h2>Exibindo sinal de maior e menor no site</h2>
+    <div>
+        <p>
+            Para exibir o sinal de maior no navegador para indicar como se escreve uma tag sem que ela funcione use '& l t' e o de menor use '& g t' (sem espaço)
+        </p>
+    </div>
+    <hr>
+    <h2>Uso da tag &ltbr&gt</h2>
+    <div>
+        <p>
+            para quebrar um parágrafo no lugar desejado basta usar a tag &ltbr&gt, use o código baixado para visualizar que agora haverá uma quebra.
+            <br>
+            Entendeu?
+        </p>
+    </div>
+    <hr>
+    <h2>Os HTML Entities</h2>
+    <div>
+        <p>
+            Os sinais de maior e menor são considerados <strong>'HTML Entities'</strong>  que possuem uma forma diferente de ser escrita, assim como:
+            <br>
+            &copy
+            &reg/
+            &nbsp/
+            <br>
+            e muitos outros
+        </p>
+    </div>
+    <hr>
+    <h2>Emojis na página</h2>
+    <div>
+        <p>
+            Você também pode colocar emojis no seu site. Veja:
+            <br>
+            😁😁😁
+            <br>
+            Use a 'emojipedia' para pesquisar os emojis desejados
+        </p>
+    </div>
+    <hr>
+    <h2>Imagens</h2>
+    <div>
+        <p>
+            Para colocar imagens use a tag &ltimg&gt, o parâmetro 'src' contendo o nome do arquivo da imagem ou a sua url e o parâmetro 'alt' indicando o que você quer que apareça caso a imagem não carregue'
+            <br>
+            Você pode extrair da mesma pasta:
+            <br>
+            Para isso basta colocar o nome do arquivo
+            <br>
+            <img src="HTML5_logo.png" alt="logo HTML5">
+            <br>
+            Pode extrair de pastas anteriores:
+            Para isso é necessário adicionar um ponto a cada a pasta que você voltará. O mínimo de pontos é dois, por exemplo se você quiser voltar uma use ../ se quiser, duas use .../ e assim por diante.
+            <br>
+            <img src="../curso programação JS/JS1/imagens/manhã.jpg" alt="imagem de pôr do sol">
+            <br>
+            Extrair de uma subpasta:
+            Para isso é preciso colocar o nome da pasta e barra.
+            <br>
+            <img src="imagensMídasVídeos/CSS3_logoM.png" alt="logo CSS3">
+            <br>
+            e você tambêm pode usar as urls de imagens externas. Assim:
+            <br>
+            <img src="https://nextupgrad.com/wp-content/uploads/elementor/thumbs/4373213_js_logo_logos_icon-pwesu39j1ra0mjt62l114u0hsv31bxw24ytxth6mtg.png" alt="logo JS">
+        </p>
+    </div>
+    <hr>
+    <h2>O que são favicons e como mudá-los</h2>
+    <div>
+        <p>
+            É possível mudar o icone que aparece no topo, do lado do título, (ele se chama favicon) para fazer isso basta ter uma imagem do tipo ico e dentro da tag &lthead&gt criar uma tag &ltlink:favicon&gt e na parte 'href' digitar o nome dado ao icone que será usado.
+            <br>
+            Para fazer uma imagem tipo ico você pode desenha-lá no site 'favicon.cc' ou tranformar um png em um ico no site 'favicon.io' e até pesquisar e salvar um em 'iconarchive'.
+            <br>
+            O icone desta página foi desenhado.
+        </p>
+    </div>
+    <hr>
+    <h2>Hierarquia de títulos</h2>
+    <div>
+        <p>
+            Os títulos possuem hierarquia. que vão do nível 1 ao 6. Eles podem ser escritos com tags como essa &lth1&gt. Quanto menor o nível do título maior a letra, mas isso não quer dizer que título é uma letra grande, para controlar tamanhos existem as CSS.
+        </p>
+    </div>
+    <hr>
+    <h2>Tags obsoletas e sua relação com a semântica no HTML5</h2>
+    <div>
+        <p>
+            algumas tags que ja foram usadas normalmente ainda podem ser usadas, mas são consideradas obsoletas, pois a qualquer momento podem deixar de funcionar e algumas que ainda não são, podem se tornar, por isso é bom sempre estar atualizado quanto a isso.
+            <br>
+            Um motivo para isso é o HTML ser semântico, ou seja, ele presa mais pelo sentido de algo do que pela forma.
+            <br>
+            Por exemplo a tag obsoleta &ltcenter&gt, que centralizava um texto, se tornou obsoleta pois isso esta mais ligado a forma/estilo (quem cuida disso são as CSS) ao invés de se preocupar com o sentido/semântica disso.
+        </p>
+    </div>
+        <hr>
+        <h2>Negrito e <EM>italico</EM></h2>
+    <div>
+        <p>
+            Existem duas tags que colocam um texto em negrito ou italico.
+            <br>
+            As não semântica que são: para <b>negrito</b> &ltb&gt e para <i>italico</i> &lti&gt. Basicamente elas indicam: colocar um texto na forma de negrito ou italico.
+            <br>
+            Também tem as semânticas que são: para <strong>negrito</strong> &ltstrong&gt e para <EM>italico</EM> &ltEM&gt. Basicamente elas indicam: colocar um texto em destaque ou em ênfase.
+            <br>
+            Não há diferença pratica entre as duas maneiras, mas a primeira se preocupa com a forma e a segunda com o sentido.
+        </p>
+    </div>
+    <hr>
+    <h2>Formatação</h2>
+    <div>
+        <p>
+            <ul>
+                <dl>
+                    <dt>Tags de formatação</dt>
+                    <dd>
+                        Tags para colocar o texto em negrito ou italico fazem parte de tags de formatação de texto. Há outras como elas. Por exemplo:
+                    </dd>
+                </dl>
+                <li>
+                    A tag <mark>&ltmark&gt</mark> que marca um texto mudando a cor do fundo para amarelo, mas você pode controlar essa cor através das CSS assim: <mark style="background: red;">&ltmark&gt</mark>.
+                </li>
+                <li>
+                    Também há as tags <big>&ltbig&gt</big> que aumenta o tamnho da letra (essa é obsoleta) e <small>&ltsmall&gt</small>(essa não é) que diminui o tamnaho da letra.
+                </li>
+                <li>
+                    Além delas temos a tag &ltdel&gt que enfatiza que excluiu o texto com um traço <del>desemado</del> desse modo, e a tag <ins>&ltins&gt</ins> que enfatiza que o texto foi incluido, sublinhando ele.
+                </li>
+                <li>
+                    Temos o <sup>sobrescrito</sup> usando a tag &ltsup&gt e o <sub>subscrito</sub> com a tag &ltsub&gt, para escrever coisas como x<sup>6</sup> e H<sub>2</sub>O.
+                </li>
+                <li>
+                    É possível também indicar uma abreviação com a tag &ltabbr&gt permitindo uma interação com seu texto assim:
+                    <br>
+                    <abbr title="Cascading Style Sheets">CSS</abbr> &nbsp &nbsp &nbsp <abbr title="HiperText Markup Language">HTML</abbr>
+                </li>
+                <li>
+                    Para indicar citações simples você pode usar a tag &ltq&gt ficando desse jeito:
+                    <br>
+                    <q>Só sei que nada sei</q>
+                    <br>
+                    e para indicar citações completas basta usar a tag &ltblockquote&gt ficando assim:
+                    <br>
+                    <blockquote>Se quer destruir um homem de poder a ele.</blockquote>
+                </li>
+                <li>
+                    <dl>
+                        <dt>Código-fonte </dt>
+                        <dd>É o que chamamos de fonte monoespaçada.</dd>
+                    </dl>Ela ajuda a ler códigos, para usá-la basta a tag <code>&ltcode&gt</code>. veja a diferença: 
+                    <br>
+                    Sem a tag code:
+                    <br>
+                    const elemento = document.createElement('p');
+                    <br>
+                    Com a tag code:
+                    <br>
+                    <code>const elemento = document.createElement('p');</code>
+                    <br>
+                    Essa tag não mostra identação (maneira de organizar códigos) para isso é preciso também o uso da tag &ltpre&gt podendo deixar seu código desse jeito:
+                    <pre id="pre"><code>
+    const body = document.getElementsByTagName('body')[0]
+    const elemento = document.createElement('p');
+    elemento.text = 'elemento'
+    body.appendChild(elemento)
+                    </code></pre>
+                </li>
+            </ul>
+            Além dessas, ainda existem outras tags de formatação.
+            </p>
+    </div>
+    <hr>
+    <h2>Listas</h2>
+    <div>
+        <p>
+            Você pode criar 3 tipos diferentes de listas em HTML5.
+            <dl>
+                <dt>Ordenadas:</dt>
+                <dd>Essas dão importância para a ordem, para criá-las use a tag &ltol&gt e para criar os itens use a &ltli&gt. Além disso elas possuem o parâmetro 'type' em que você indica como os itens vão ser marcados e o parâmetro 'start' que indica a partir de qual letra ou número a lista deve começar a ser marcada.</dd>
+                <dt>Não ordenadas:</dt>
+                <dd>Essas não dão importância para ordem. A tag &ltul&gt que a cria e seus itens são criados da mesma forma das listas ordenadas. A tag type também existe nessa lista, porém a start não.</dd>
+                <dt>Listas mistas</dt>
+                <dd>Você pode colocar uma lista dentro de outra, mesmo uma sendo ordenada e a outra não.</dd>
+                <dt>Listas de definição</dt>
+                <dd>Por fim essas funcionam como um dicionário, o termo fica acima marcado pela tag &ltdt&gt e a definição fica abaixo marcada pala tag &ltdd&gt. Para funcionarem todas elas precisam estar dentro de uma tag &ltdl&gt. Obs: Essas definições de listas que você está lendo foram feitas com essa tag &ltdl&gt.</dd>
+            </dl>
+        </p>
+    </div>
+    <hr>
+    <h2>Links</h2>
+    <div>
+        <p>
+            Para ver exemplos de links sendo usados em sites <a href="EXs/links.html" target="_self" rel="next">clique aqui</a>
+            <br>
+            Esse link que você acabou de acessar é interno, para criá-lo foi necessário: a tag &lta&gt, o parâmetro 'href:' (que indicou o nome da pasta), o parâmetro 'target' (que indicou que o link devia ser aberto na mesma página) e o parametro 'rel' (que indicou ao navegador que a página que seria acessada era a próxima).
+            <br>
+            A maneira como o parâmetro href se comporta é semelhante a como o parâmetro src se comporta logo nós também podemos criar links externos usando, ao invés de nomes de pastas, URLs. A página que você viu continha um link externo para o canal do curso em vídeo.
+            Dependendo do tipo do link que você vai usar você também deve alterar os parâmetros.
+            <br>
+            É possível criar links para dowloads que funcionam com arquivos zip como o link no início da página.
+        </p>
+    </div>
+    <hr>
+    <h2>Imagens dinâmicas</h2>
+    <div>
+        <p>
+            Para o usuário do site ter uma boa experiência é necessário que a imagem que será usada se adapte ao tamanho do navegador.
+            <br>
+            Para fazer isso nós usamos a tag &ltpicture&gt colocamos uma tag &ltimg&gt com uma imagem padrão e tags &ltsource:media:type&gt para imagens para diferentes dispositivos, para celular imagens menores, para tablets, médias, para computadores, grandes e segue a lógica para outros dispositivos.
+            <br>
+            Para usar essa tag você indica que imagem você quer que apareça caso o navegador esteja com mais, ou menos de um número de pixel.
+            <br>
+            Leia os códigos para entender como funciona.
+            <br>
+            <picture>
+                <source media="(max-width: 500px)" srcset="midias/CSS3_logoP.png" type="image/png">
+                <!--Essa imagem aparece quando o tamanho do navegador é menor que 500px.-->
+                <source media="(max-width: 900px)" srcset="midias/CSS3_logoM.png" type="image/png">
+                <!--Essa imagem aparece quando o tamanho do navegador é menor que 900px e maior que 500px.-->
+                <img src="midias/CSS3_logoG.png" alt="Logo CSS">
+                <!--Essa imagem aparece quando nenhuma das outras aparece.-->
+                <source>
+            </picture>
+            <br>
+            Esse foi um exemplo de como criar imagens dinâmicas, mas é importante lembrar de que poderia ser feito de outra maneira.
+            <br>
+            Obs: não se esqueça, a ordem das tags importa.
+        </p>
+    </div>
+    <hr>
+    <h2>Audio</h2>
+    <div>
+        <p>
+            Dependendo do navegador em que o seu site está rodando e do tipo de arquivo de audio, nem sempre ele carrega, por isso é bom tê-lo nos dois modelos 'mp3' e 'ogg'.
+            Para criar um audio é preciso a tag &ltaudio&gt dentro dela haverá o parâmetro 'src', mas também será preciso o parâmetro 'controls' e também é bom ter um outro chamado 'preload' e a ele sempre atribua o valor metadata.
+            <br>
+            Veja alguns exemplos:
+            <br>
+            <audio src="imagensMídasVídeos/audioTeste.mp3" preload="metadata" controls ></audio>
+            <br>
+            Este audio só funcionará em alguns navegadores por isso é bom criar as seguintes tags:
+            <br>
+            <audio preload="metadata" controls >
+                <source src="imagensMídasVídeos/audioTeste.mp3" type="audio/mpeg">
+                <source src="imagensMídasVídeos/audioTeste.ogg" type="audio/ogg">
+                <!--O último arqivo não existe, mas sempre que possível coloque um audio ogg além do mp3.-->
+            </audio>
+            <br>
+            Mesmo fazendo dessa forma haverão usuários que não conseguirão ouvir o seu audio.
+        </p>
+    </div>
+    <hr>
+    <h2>Vídeos</h2>
+    <div>
+        <p>
+            Você pode usar vídeos de hospedagem própria que custam muito para o cliente que paga essa hospedagem.
+            <br>
+            O modo de usar vídeos dessa forma é similar ao uso de audios, veja:
+            <br>
+            <video preload="metadata" controls width="280px">
+                <source src="imagensMídasVídeos/vídeoTeste.mp4" type="video/mp4">
+                <source src="imagensMídasVídeos/vídeoTeste.mkv" type="video/mp4">
+                <source src="imagensMídasVídeos/vídeoTeste.webm" type="video/webm">
+            </video>
+            <br>
+            Uma diferença importante de citar é que você pode escolher um arquivo para ser a thumb dele com o parâmetro 'poster'.
+            <br>
+            Há uma forma de colocar vídeos externos (do youtube) no seu site, esta não custará nada.
+            <br>
+            <iframe width="280" height="157" src="https://www.youtube.com/embed/FdE5G95B7Mg?si=DkCGiphmPd_34jI-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <br>
+            E você pode usar vídeos do vimeo.
+            <br>
+            <iframe width="280" height="210" src="https://player.vimeo.com/video/19810624?h=bcf1b73ccd&color=ff9933" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+        </p>
+    </div>
+    <hr>
+    <h2></h2>
+    <script src="script.JS"></script>
+</body>
+</html>

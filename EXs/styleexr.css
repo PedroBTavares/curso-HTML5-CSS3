@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Bronco';
+    src: url('../fonts/BroncoPersonalUse.ttf') format('truetype');
+    font-weight: normal;
+}
+
+body{
+    background-image: linear-gradient(to top, #FF8E6B, #FF7591);
+    background-attachment: fixed;
+    font: normal 12pt arial;
+}
+h1{
+    font-family: 'Bronco', sans-serif;
+    color: #B32A00;
+    text-align: center;
+}
+h2{
+    color: #468fac;
+}
+main{
+    background-color: white;
+    margin: auto;
+    padding: 5px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px #6d3c2e;
+    width: 500px;
+    text-indent: 2em;
+}

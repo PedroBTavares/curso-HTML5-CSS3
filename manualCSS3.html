@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Manual CSS3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Manual de CSS3</h1>
+    <p>
+        Este site contém dicas sobre CSS3.
+        <br>
+        Você pode baixar os arquivos que compõem este site para entender como os comandos funcionam.
+        <br>
+        Por favor utilize somente para estudo.
+        <br>
+        Para compreender melhor os assuntos falados acesse a página <a href="manualHTML5.html" target="_blank">Manual <abbr title="HiperText Markup Language">HTML5</abbr></a>.
+    </p>
+    <hr>
+    <h2>Maneiras de escrever seus códigos CSS</h2>
+    <div>
+        <p>
+            Existem três formas de dar estilo ao seu site:
+            <dl>
+                <dt>Estilos inline</dt>
+                <dd>
+                    Esse modo é mais eficiente para situações pontuais.
+                    Por exemplo: se entre várias tags iguais você quiser mudar uma rapidamente, poderá escrever o parâmetro style e dentro dele dar a configuração desejada.
+                    <br>
+                    Obs: você pode colocar quantas configurações quiser dentro desse parâmetro.
+                    <br>
+                    Veja isso em prática:
+                    <br>
+                    <mark style="background-color: aquamarine; font: normal bold 1em arial;">leia com atenção</mark>
+                </dd>
+                <dt>CSS locais</dt>
+                <dd>
+                    Essa forma aplica um estilo a todas as tags do tipo selecionado.
+                    <br>
+                    Para usá-la você tem que criar uma tag style dentro da tag head e para selecionar os elementos deve dar o nome das tags escolhidas, 'sem colocar entre sinal de maior e menor', e na frente abrir chaves, dentro delas é só colocar as configurações desejadas.
+                    <br>
+                    siga o exemplo:
+                    <br>
+                    <pre style="font-size: 12pt;"><code>
+    &ltstyle&gt
+    body{
+        font: normal 15pt arial;
+        color: yellow;
+        background-color: rgb(0, 0, 141);
+    }
+    p{
+        margin-top: 30px;
+    }
+    a{
+        color:white;
+    }
+    audio{
+        margin-top: 10px;
+    }
+    dt{
+        font: bold 17pt arial;
+        color: rgb(255, 196, 0);
+    }
+    &ltstyle&gt</code></pre>
+                </dd>
+                <dt>Estilos externos</dt>
+                <dd>
+                    este é o último modo de se acessar as CSS.
+                    <br>
+                    Nele você cria uma tag &ltlink:css&gt, o parâmetro 'rel' já virá indicando que aquilo é uma 'folha de estilo' e no parâmetro 'href' você indica qual o documento que dará estilo as suas páginas. Você pode utilizar um mesmo documento de estilo para quantas páginas você quiser.
+                    <br>
+                    Obs: os nomes deles devem terminar em '.css'
+                    <br>
+                    Observe o exemplo:
+                    <br>
+                    <code>&ltlink rel="stylesheet" href="style.css"&gt</code>
+                    <br>
+                    O modo de se acessar elementos é igual ao último.
+                </dd>
+            </dl>
+        </p>
+    </div>
+    <hr>
+    <h2>Cores</h2>
+    <div>
+        <p>
+            Quando for criar um site se preocupe com as cores, pois elas influenciam fortemente a experiência do usuário use o seguinte gráfico para se guiar nas escolhas de cores, mas não se prenda a ele.
+            <br>
+                <img src="midias/grafico_cores_g.png" alt="gráfico">
+            <br>
+            Para selecionar a cor desejada em CSS há três maneiras. Utilizar códigos hexadecimais, usar <abbr title="Red Green Blue">rgb</abbr> ou hsl. Veja:
+            <br>
+            <mark style="background-color: #a0f0a0;">hexadecimal</mark>
+            <mark style="background-color: rgb(160, 240, 160);">rgb</mark>
+            <mark style="background-color: hsl(120, 73%, 78%);">hsl</mark>
+            <br>
+            é possível dar transparência as suas cores.
+            <br>
+            <mark style="background-color: #a0f0a080;">transparência</mark>
+            <br>
+            Se quiser entender mais sobre harmonia de cores acesse o <a href="https://youtu.be/E2gaDa4ZaTc" target="_blank">vídeo do curso em vídeo</a>. principalmente entre os minutos 10 e 24.
+            <br>
+            Para criar uma paleta use o <a href="https://www.bing.com/ck/a?!&&p=1f97a7ca4ec72194JmltdHM9MTcwOTI1MTIwMCZpZ3VpZD0xMDZkMDc0ZC0zMmE1LTY0ODgtMTFjOS0xNGM2MzM1MjY1NTgmaW5zaWQ9NTIxMg&ptn=3&ver=2&hsh=3&fclid=106d074d-32a5-6488-11c9-14c633526558&psq=adobe+colors&u=a1aHR0cHM6Ly9jb2xvci5hZG9iZS5jb20v&ntb=1" target="_blank">adobe colors</a>
+            <br>
+            Se precisar extrair alguma cor de um site utilize a extensão ColorZilla do Google Chrome.
+            <br>
+            Existe uma forma criar degradês em CSS. Ela é usada a partir de uma configuração "background-image" com uma sub configuração "linear-gradiente" dentro dela você indica a direção do gradiente com "to right/left/top ou bottom" e indica a partir de qual cor irá partir por qual vai passar (isso é opcional) e em qual irá parar. Dessa forma:
+            <br>
+            <code style="background-image: linear-gradient(to right, #F49FBC, rgb(113, 113, 221)); color: black;">
+                background-image: linear-gradient(to right, red, white, green, blue);
+            </code>
+            <br>
+        </p>
+    </div>
+    <hr>
+    <h2>Tipografia</h2>
+    <div>
+        <p>
+            Além de cores também deve se dar atenção a fonte que você irá usar no seu site.
+            Existem diferentes medidas de fontes (absolutas: cm, mm, in-"polegada", px, pt, pc; relativas: em=16px, ex, rem, vw, vh, %) as recomendadas pela W3C são os "px" e o "em"
+            <br>
+            Obs: se quiser representar um número racional use ponto ao invés de vírgula.
+            <br>
+            Obs: 1px = 0.0625em
+            <br>
+            Ao aplicar configurações em suas fontes há dois modos.
+            <br>
+            1°- especificar uma única configuração, exemplo:
+            <br>
+            <code>font-family: arial, sans-serif;</code>
+            <br>
+            2°- usar uma shorthand que condensa todas as informações, exemplo:
+            <br>
+            <code>font: italic small-caps bold 1em arial, sans-serif</code>
+            <br>
+            Nessa forma é preciso seguir uma ordem (<code>1° - font-style: ex: italic; 2° - font-variant: small-caps; 3° - font-weight: ex: bolder; 4° - font-size: ex: 1em; 5° - font-family: ex: sans-serif.</code>).
+            <br>
+            Como encontrar e usar as fontes: Use o google fonts e ao selecionar a font escolhida e copie o código @import que aparecer.
+            <br>
+            Se precisar usar uma fonte baixada use o seletor especial das CSS @font-face{}.
+            <br>
+            Para achar fontes em imagens use <a href="https://www.whatfontis.com/" target="_blank">WhatFontIs</a>, <a href="https://www.fontsquirrel.com/" target="_blank">Fonts Squirrel</a> ou <a href="https://www.myfonts.com/" target="_blank">MyFonts</a>
+            <br>
+            Ao alinhar um texto use a declaração "text-align" (center, left, right ou justify).
+        </p>
+    </div>
+    <hr>
+    <h2>Classes e identificadores</h2>
+    <div>
+        <p>
+            Quando estiver criando um sitre surgirá a necessidade de dar várias declarações há uma única tag dentre várias outras do mesmo tipo. quando isso acontece existem dois parâmetros que reslovem este problema, o parâmetro "id" (identificador) e o parâmetro "class" (classe), a esses parâmetros você da o nome que quiser para poder diferencia-los ao criar um seletor em CSS. Observe um exemplo:
+            <br>
+            <code><pre>
+    &lth1 id="principal"&gtOlá, mundo!&lth1&gt
+    &lth1&gtOlá, mundo 1!&lth1&gt
+    &lth1&gtOlá, mundo 2!&lth1&gt
+            </pre></code>
+            Para criar um seletor deste h1 específico se usa o símbolo #. Veja:
+            <code><pre>
+    h1{
+        background-color: white;
+    }
+    h1#principal{
+        color: blue;
+    }
+    #principal{
+        color: blue;
+    }
+            </pre></code>
+            Nesse exemplo o primeiro seletor é um geral, para todos os h1 inclusive o h1 com id principal,
+            o segundo seletor é um exemplo de como de se usar tags com id (ele não anula as declarações feitas pelo seletor geral a não ser que você crie outra declaração dentro desse seletor com uma configuração diferente da declaração do seletor geral) e terceiro seletor é outra forma de se criar um seletor com id, mas dessa forma se existir uma tag de outro tipo com esse mesmo id ela também sofrerá os efeitos das configurações, diferente do modo anterior que só afeta tags do mesmo tipo e com o mesmo id.
+            <br>
+            As classes funcionam da mesma forma que os IDs. As únicas diferenças entre as duas são: 
+            <br>
+            1 - Não é recomendado aplicar um "mesmo" id a mais de uma tag em um mesmo documento, já para as classes não há problema nisso.
+            <br>
+            2 - Se as configurações de uma class e um id entrarem em conflito as que vão predominar são as do id, pois ele é mais específico.
+            <br>
+            3 - para selecionar um id se usa "#" e para selecionar uma class se usa " . "
+            <br>
+            Obs: Um elemento pode ter mais de uma classe, assim como ele também pode ter um id e fazer parte de uma class.
+        </p>
+    </div>
+    <hr>
+    <h2>Pseudo-classes e pseudo-elementos</h2>
+    <div>
+        <p>
+            Em vários momentos será preciso dar uma configuração de estilo para um elemento somente quando ele está em um determinado estado, para isso existem as pseudo-classes.
+            <br>
+            Modo de usar: coloque a tag que você quer dar estilo, depois coloque dois pontos, por fim coloque o nome da pseudo classe que irá utilizar, vamos usar como exemplo o hover que indica que ao passar o mouse por cima daquele elemento ele terá o estilo que estiver configurado dentro do seletor. Exemplo:
+            <pre><code>
+div:hover{
+    background-color: gray;
+}
+            </code></pre>
+            Com essa configuração quando passarmos o mouse por cima da div ela ficará com o fundo cinza.
+            <br>
+            Existem diversas pseudo classes cada uma com uma função.
+            <br>
+            Os pseudos elementos servem para modificar ou adicionar o conteudo do HTML por CSS.
+            <br>
+            Modo de usar: funciona basicamente da mesma forma que as pseudo-classes só que ao invés de um sinal de dois pontos são dois sinais de dois pontos (o nome dos pseudo-elementos não são os mesmo que os das pseudo-classes). Exemplo:
+            <pre><code>
+div::after{
+    content: 'Este texto vai aparecer em vermelho depois da div';
+    color: red;
+}
+            </code></pre>
+            O resultado desse código seria a adição (ao fim da div) em vermelho do texto escrito no content (conteudo).
+        </p>
+    </div>
+    <hr>
+    <h2>Box model</h2>
+    <div>
+        <p>
+            Toda tag que exibe ou contêm algo em HTML cria uma caixa.
+            <br>
+            Essas caixas podem ser classificadas em dois tipos:
+            <br>
+            <ul>
+                <dl>
+                    <li>
+                        <dt>Block-level</dt>
+                        <dd>Quebram uma linha e por padrão ocupam toda a largura do contêiner (caixa que contém um content, conteúdo da caixa, nesse caso a caixa de que estamos falando); se quiser você pode manipular as medidas dela.</dd>
+                    </li>
+                    <li>
+                        <dt>Inline-level</dt>
+                        <dd>Não quebram a linha e ocupam somente o espaço que precisam; não é possível alterar suas medidas.</dd>
+                    </li>
+                </dl>
+            </ul>
+            As caixas possuem basicamente quatro partes.
+            <br>
+            <img src="https://miro.medium.com/v2/resize:fit:1400/1*kGMWtZihmaUhxZI5ZVicLA.png" alt="imagem ilustrando as partes de uma caixa">
+            <ul>
+                <dl>
+                    <li>
+                        <dt>Content</dt>
+                        <dd>Conteúdo da caixa</dd>
+                    </li>
+                    <li>
+                        <dt>Padding</dt>
+                        <dd>Espaço vazio até as bordas</dd>
+                    </li>
+                    <li>
+                        <dt>Border</dt>
+                        <dd>Borda da caixa</dd>
+                    </li>
+                    <li>
+                        <dt>Margin</dt>
+                        <dd>espaço entre a caixa e as bordas do contêiner e entre as outras caixas.</dd>
+                    </li>
+                </dl>
+            </ul>
+            Para enchergar isso utilize o dev tools.
+            <br>
+            Obs: todas as partes possuem shorthands para que você possa configurá-las.
+            <br>
+            exitesm tags que criam box semânticas do tipo block-level. Elas são chamadas de <strong>Groupping Tags</strong> algumas são: header (cabeçalho), nav (menu/navegação), main (conteúdo), section (conteúdos relacionados), article (conteúdo periférico, que funciona isoladamente).
+            <br>
+            É possível criar bordas únicas, veja esse <a href="https://youtu.be/n0rjAs_Im4w" target="_blank">video</a> para enteder.
+        </p>
+    </div>
+    <script src="script.JS"></script>
+</body>
+</html>
