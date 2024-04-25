@@ -1,0 +1,99 @@
+@charset "UTF-8";
+body{
+    font: normal 1em arial, sans-serif;
+    margin: 10px 0;
+}
+
+:root{
+    --pdp01: url("imagens-cap19/pattern001.png");
+    --pdp02: url("imagens-cap19/pattern002.png");
+    --pdp03: url("imagens-cap19/pattern003.png");
+    --pdp04: url("imagens-cap19/pattern004.png");
+    --pdp05: url("imagens-cap19/target001.png");
+    --pdp06: url("imagens-cap19/wallpaper001.jpg");
+    --pdp07: url("imagens-cap19/wallpaper002.jpg");
+    --pdp08: url("imagens-cap19/wallpaper003.jpg");
+    --pdp09: url("imagens-cap19/wallpaper004.jpg");
+    --pdp10: url("imagens-cap19/wallpaper005.jpg");
+    --pdp11: url("imagens-cap19/wallpaper006.jpg");
+}
+
+#corpo1{
+    background-image: var(--pdp09);
+    background-attachment: fixed;
+}
+
+#corpo2{
+    background-image: url("https://raw.githubusercontent.com/gustavoguanabara/html-css/master/imagens/mascote.png") /*url("imagens-cap19/wallpaper004.jpg")*/;
+    background-repeat: repeat;
+    background-color: gray;
+    background-size: 100px 100px;
+    
+    /*background-attachment: fixed;*/
+}
+
+h1, h2{
+    display: block;
+    margin: auto;
+    border: solid 3px brown;
+    padding: 0 5px;
+    width: fit-content;
+
+    text-align: center;
+    border-radius: 10px;
+    background-color: antiquewhite;
+}
+
+.qex1{
+    border: solid 3px black;
+    width: 400px;
+    height: 400px;
+    max-width: 100%;
+    margin: 10px auto;
+}
+
+#q1ex1{
+    background-image: var(--pdp01);
+}
+#q2ex1{
+    background-image: var(--pdp02);
+}
+#q3ex1{
+    background-image: var(--pdp03);
+}
+
+.qex3{
+    margin: 10px;
+    height: 200px;
+    border: solid 3px black;
+    border-radius: 15px;
+    background-image: var(--pdp08);
+}
+
+#q1ex3{
+    background-position: left top;
+}
+#q2ex3{
+    background-position: top center;
+}
+#q3ex3{
+    background-position: right top;
+}
+#q4ex3{
+    background-position: left center;
+}
+#q5ex3{
+    background-position: center center;
+}
+#q6ex3{
+    background-position: right center;
+}
+#q7ex3{
+    background-position: left bottom;
+}
+#q8ex3{
+    background-position: center bottom;
+}
+#q9ex3{
+    background-position: right bottom;
+}
