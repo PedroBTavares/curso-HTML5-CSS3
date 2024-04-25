@@ -32,6 +32,16 @@ body{
     /*background-attachment: fixed;*/
 }
 
+#corpo4{
+    height: 100vh;
+    background-color: black;
+    background-image: var(--pdp07);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*background-attachment: fixed;*/
+}
+
 h1, h2{
     display: block;
     margin: auto;
@@ -42,6 +52,10 @@ h1, h2{
     text-align: center;
     border-radius: 10px;
     background-color: antiquewhite;
+}
+
+a{
+    margin: 0 10px;
 }
 
 .qex1{
@@ -96,4 +110,13 @@ h1, h2{
 }
 #q9ex3{
     background-position: right bottom;
+}
+
+#main4{
+    background-color: white;
+    width: 50%;
+    margin: auto;
+    padding: 10px;
+    border: solid 5px white;
+    border-radius: 15px;
 }
