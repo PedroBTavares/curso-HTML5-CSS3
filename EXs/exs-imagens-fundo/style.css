@@ -33,13 +33,18 @@ body{
 }
 
 #corpo4{
-    height: 100vh;
+    /* height: 100vh;
     background-color: black;
     background-image: var(--pdp07);
     background-position: center center;
     background-repeat: no-repeat;
+    background-attachment: fixed; */
+
+    /* shorthand background:
+    color > image > position > repeat > (size) > attachment
+    */
+    background: black var(--pdp07) center center no-repeat fixed;
     background-size: cover;
-    /*background-attachment: fixed;*/
 }
 
 h1, h2{
@@ -114,7 +119,8 @@ a{
 
 #main4{
     background-color: white;
-    width: 50%;
+    width: 500px;
+    max-width: 90%;
     margin: auto;
     padding: 10px;
     border: solid 5px white;
