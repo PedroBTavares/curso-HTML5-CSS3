@@ -126,3 +126,33 @@ a{
     border: solid 5px white;
     border-radius: 15px;
 }
+
+#corpo5{
+    margin: 0;
+}
+
+#main5{
+    background-color: aqua;
+    background-image: var(--pdp05);
+    background-size: 100% 100%;
+
+    position: absolute;
+    width: 75%;
+    height: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#conteudo{
+    background-color: white;
+    background-image: var(--pdp05);
+    background-size: 100% 100%;
+
+    position: relative;
+    height: 25%;
+    width: 25%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
