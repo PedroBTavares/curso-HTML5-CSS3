@@ -7,6 +7,7 @@
 }
 body{
     font: normal 1.7em 'Sriracha';
+    background-color: rgb(199, 233, 255);
 }
 a{
     text-decoration: none;
@@ -26,12 +27,19 @@ header{
 header > h1 {
     color: white;
     font-family: 'Passion One', sans-serif;
+    font-variant: small-caps;
 }
 header > p{
     color: white;
     font: normal 0.8em Verdana, Tahoma, sans-serif ;
 }
 
+main{
+    max-width: 800px;
+    background-color: white;
+    margin: auto;
+    margin-top: 0;
+}
 .parte{
     margin: 50px 0;
 }
