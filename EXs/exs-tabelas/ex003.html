@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela zebrado</title>
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: aqua;
+        }
+        table{
+            background-color: white;
+            border-collapse: collapse;
+
+            width: 400px;
+            height: 300px;
+        }
+        caption{
+            background-color: black;
+            font-weight: bolder;
+            color: white;
+            padding: 5px;
+        }
+        td{
+            border: solid 2px black;
+            text-align: center;
+        }
+        .colorido{
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabela com script de efeito zebrado.</h1>
+    
+    <table>
+        <caption>Tabela zebrada</caption>
+        <tr>
+            <td>a</td>
+            <td>a</td>
+            <td rowspan="2"
+            colspan="2">a</td>
+        </tr>
+        <tr>
+            <td>a</td>
+            <td >a</td>
+        </tr>
+        <tr>
+            <td>a</td>
+            <td>a</td>
+            <td>a</td>
+            <td>a</td>
+        </tr>
+        <tr>
+            <td>a</td>
+            <td>a</td>
+            <td>a</td>
+            <td>a</td>
+        </tr>
+        <tr>
+            <td>a</td>
+            <td>a</td>
+            <td>a</td>
+        </tr>
+        <tr>
+            <td>a</td>
+            <td>a</td>
+            <td>a</td>
+            <td>a</td>
+        </tr>
+    </table>
+
+    <script>
+        const trAll = Array.from(document.querySelectorAll('tr'))
+        trAll.forEach((tr) => {
+            const tdAll = Array.from(tr.querySelectorAll('td'))
+            const itr = trAll.indexOf(tr)
+
+            tdAll.forEach((td) => {
+                const itd = tdAll.indexOf(td)
+
+                if(Number.isInteger(itr/2)){
+                    if(Number.isInteger(itd/2)){
+                        td.classList.add('colorido')
+                    }
+                } else {
+                    if(!Number.isInteger(itd/2)){
+                        td.classList.add('colorido')
+                    }
+                }
+                })
+        })
+    </script>
+</body>
+</html>

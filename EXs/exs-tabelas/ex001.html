@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela 1</title>
+    <style>
+        body{
+            font: normal 1em arial, sans-serif;
+            background-color: aqua;
+        }
+        table{
+            border-collapse: collapse;
+            background-color: white;
+        }
+        caption{
+            background-color: black;
+            color: white;
+            padding: 10px;
+            font-weight: bolder;
+
+            position: sticky;
+            top: 0;
+        }
+        td, th{
+            min-height: 20px;
+            margin: 0;
+            border: solid 2px black;
+            padding: 5px;
+
+            text-align: center;
+            vertical-align: middle;
+        }
+        th{
+            background-color: gray;
+            color: white;
+
+            position: sticky;
+            top: 37px;
+        }
+        tbody tr:nth-child(even){
+            background-color: lightgray;
+        }
+        .posiçao{
+            background-color: rgb(219, 219, 219);
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabela</h1>
+    <!--
+        Hierarquia de tabelas simples:
+    table = tabela
+        table row = linha de tabela
+            table header = cabeçalho de tabela
+            table data = dados de tabela
+
+            class="colorido"
+
+        Hierarquia de tabelas grandes:
+    table
+        caption
+        thead = cabeçalho da tabela
+            tr
+                td, th
+        tbody = corpo da tabela
+            tr
+                td, th
+        tfoot = roda pé da tabela
+            tr
+                td, th
+    -->
+    
+    <table>
+        <caption>População de cada estado</caption>
+        <thead>
+            <tr>
+                <th scope="col">posição</th>
+                <th scope="col">estado</th>
+                <th scope="col">população</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td></td>
+                <td>São Paulo</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Minas Gerais</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Rio de Janeiro</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Bahia</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Paraná</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Rio Grande do Sul</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Pernambuco</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Ceará</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Pará</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Santa Catarina</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Goiás</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Maranhão</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Paraíba</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Amazonas</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Espírito Santo</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Mato Grosso</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Rio Grande do Norte</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Piauí</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Alagoas</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Distrito Federal</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Mato Grosso do Sul</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Sergipe</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Rondônia</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Tocantins</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Acre</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Amapá</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Roraima</td>
+                <td></td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de habitantes</th>
+                <td>210.147.125</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <div id="txtvol">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit neque dignissimos numquam vitae fugiat et maxime quis? Quisquam expedita fugiat error ipsa dolorum optio quae? Sequi provident sapiente doloribus eveniet?</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit neque dignissimos numquam vitae fugiat et maxime quis? Quisquam expedita fugiat error ipsa dolorum optio quae? Sequi provident sapiente doloribus eveniet?</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit neque dignissimos numquam vitae fugiat et maxime quis? Quisquam expedita fugiat error ipsa dolorum optio quae? Sequi provident sapiente doloribus eveniet?</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit neque dignissimos numquam vitae fugiat et maxime quis? Quisquam expedita fugiat error ipsa dolorum optio quae? Sequi provident sapiente doloribus eveniet?</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit neque dignissimos numquam vitae fugiat et maxime quis? Quisquam expedita fugiat error ipsa dolorum optio quae? Sequi provident sapiente doloribus eveniet?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime debitis id ipsa alias, nulla similique voluptatibus repudiandae animi aperiam. Molestiae officiis consequuntur minima ex voluptates ducimus mollitia quis? Blanditiis, temporibus.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime debitis id ipsa alias, nulla similique voluptatibus repudiandae animi aperiam. Molestiae officiis consequuntur minima ex voluptates ducimus mollitia quis? Blanditiis, temporibus.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime debitis id ipsa alias, nulla similique voluptatibus repudiandae animi aperiam. Molestiae officiis consequuntur minima ex voluptates ducimus mollitia quis? Blanditiis, temporibus.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime debitis id ipsa alias, nulla similique voluptatibus repudiandae animi aperiam. Molestiae officiis consequuntur minima ex voluptates ducimus mollitia quis? Blanditiis, temporibus.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime debitis id ipsa alias, nulla similique voluptatibus repudiandae animi aperiam. Molestiae officiis consequuntur minima ex voluptates ducimus mollitia quis? Blanditiis, temporibus.</p>
+    </div>
+
+    <script>
+        const tbody = document.getElementsByTagName('tbody')[0]
+        const trAll = Array.from(tbody.querySelectorAll('tr'))
+        trAll.forEach((tr) =>{
+            const pos = trAll.indexOf(tr)
+            const tdAll = tr.querySelectorAll('td')
+            const td1 = tdAll[0]
+            const td3 = tdAll[2]
+            td1.innerText = `${pos + 1}°`
+            td3.innerText = (pos + 1)*1000
+        })
+    </script>
+</body>
+</html>

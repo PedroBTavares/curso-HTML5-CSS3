@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela mesclagem</title>
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: aqua;
+        }
+
+        table{
+            border-collapse: collapse;
+
+            width: 400px;
+            height: 300px;
+        }
+        caption{
+            background-color: black;
+            padding: 5px;
+            font-weight: bolder;
+            color: white;
+        }
+        td, th{
+            border: solid 2px black;
+            text-align: center;
+            background-color: white;
+        }
+        th{
+            background-color: lightgray;
+        }
+        tfoot td{
+            background-color: black;
+            padding: 5px;
+            font-weight: bolder;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mesclagem de células em tabelas</h1>
+
+    <table>
+        <caption>Tabela teste</caption>
+        <thead>
+            <tr>
+                <td></td>
+                <th scope="col">coluna 1</th>
+                <th scope="col">colouna 2</th>
+                <th scope="col">coluna 3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">linha a</td>
+                <td>a1</td>
+                <td colspan="2">a2</td>
+            </tr>
+            <tr>
+                <th scope="row">linha b</td>
+                <td rowspan="2">b1</td>
+                <td>b2</td>
+                <td>b3</td>
+            </tr>
+            <tr>
+                <th scope="row">linha c</td>
+                <td>c2</td>
+                <td>c3</td>
+            </tr>
+            <tr>
+                <th scope="row">linha d</td>
+                <td>d1</td>
+                <td rowspan="2" colspan="2">d2</td>
+            </tr>
+            <tr>
+                <th scope="row">linha e</td>
+                <td>e1</td>
+            </tr>
+            <tr>
+                <th>linha f</th>
+                <td colspan="2">f1</td>
+                <td>f2</td>
+                <td>f3</td>
+            </tr>
+            <tr>
+                <th>linha g</th>
+                <td rowspan="2">g1</td>
+                <td>g2</td>
+                <td>g3</td>
+            </tr>
+            <tr>
+                <th>linha h</th>
+                <td>h1</td>
+                <td>h2</td>
+                <td>h3</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <td colspan="4">FIM</td>
+        </tfoot>
+    </table>
+</body>
+</html>
