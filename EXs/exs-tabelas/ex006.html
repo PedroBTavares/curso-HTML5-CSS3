@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela desafio</title>
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: aqua;
+        }
+
+        table{
+            width: 400px;
+
+            border-collapse: collapse;
+            background-color: white;
+        }
+        th, td{
+            border: solid 2px black;
+            padding: 5px 0;
+        }
+        .destacado{
+            background-color: gray;
+            color: white;
+        }
+        tbody .media{
+            text-align: left;
+            padding-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th class="destacado" rowspan="2">Área</th>
+                <th class="destacado" rowspan="2">Disciplinas</th>
+                <th class="destacado" colspan="2">Notas</th>
+                <th class="destacado" rowspan="2">Média</th>
+            </tr>
+            <tr>
+                <th class="destacado" >Nota 1</th>
+                <th class="destacado" >Nota 2</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <th scope="rowgroup" rowspan="4">Exatas</th>
+                <td>Matemática</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td>Física</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td>Química</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td>Biologia</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <th  class="destacado media" scope="row" colspan="4">Média de Exatas</th>
+                <td class="destacado" >0.0</td>
+            </tr>
+            <tr>
+                <th rowspan="2" scope="rowgroup">Humanas</th>
+                <td>História</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td>Geografia</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <th class="destacado media" colspan="4" scope="row">Média de Humanas</th>
+                <td class="destacado">0.0</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script>
+        const tdAll = document.querySelectorAll('td')
+        tdAll.forEach((td) => {
+            if(td.innerText == '0.0'){
+                td.style.textAlign = 'center'
+            }
+        })
+    </script>
+</body>
+</html>
