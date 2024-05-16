@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testes com iframes</title>
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        p{
+            padding: 5px;
+            margin-top: 25px;
+            border: solid 2px black;
+        }
+        #estilizado{
+            width: 200px;
+            height: 100px;
+            border: solid 2px black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iframes</h1>
+    <p>
+        os iframes são "sites dentro de sites", veja:
+        <br>
+        Acesse o site do 
+        <iframe src="https://cursoemvideo.com" frameborder="0">
+            Se você está lendo essa mensagem é porque seu navegador não é compatível com iframes.
+        </iframe> para fazer vários cursos.
+        <!--    ^Iframe sem estilo    -->
+    </p>
+    <p>
+        Existem sites que não podem ser colocados em iframes, por exemplo o site do
+        <iframe src="https://google.com.br" frameborder="0"></iframe> google 
+        <!--    ^Iframe com acesso negado   -->
+    </p>
+    <p>
+        Acesse também o repositório do github do 
+        <!--    tamanho padrão: 300px x 150px   -->
+        <iframe src="https://gustavoguanabara.github.io" frameborder="1" width="400px" height="200px"></iframe> 
+        <!--    ^Iframe com tamanho manipuladao no HTML    -->
+    </p>
+    <p>
+        Visite o repositório do github do
+        <iframe src="https://pedrobtavares.github.io/curso-HTML5-CSS3" frameborder="0" id="estilizado" style="width: 250px; height: 175px;"></iframe>
+        <!--    ^Iframe com estilo nas CSS    -->
+    </p>
+    <p>
+        Dê uma olhada no site
+        <iframe src="https://pedrobtavares.github.io/testes/rifa" frameborder="0" scrolling="no"></iframe>
+        <!--    Nem todos os navegadores aceitam o parâmetro "scrolling"    -->
+        <!--    ^Iframe com adaptação de rolagem    -->
+    </p>
+    <p>
+        Veja um site teste:
+        <br>
+        <iframe src="teste1.html" frameborder="1" style="display: block; margin: auto;"></iframe>
+        <!--    ^Iframe de um site interno    -->
+    </p>
+    <p>
+        É possível usar um link ligado a um iframe.
+        Observe o exemplo.
+        <br>
+        <a href="teste1.html" target="linkFrame">acesse o site pelo iframe</a>
+        <br>
+        <a href="teste2.html" target="linkFrame">acesse outro site pelo iframe</a>
+        <br>
+        <iframe src="" frameborder="1" name="linkFrame"></iframe>
+    </p>
+</body>
+</html>
