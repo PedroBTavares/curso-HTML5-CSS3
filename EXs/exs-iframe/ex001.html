@@ -23,6 +23,7 @@
 </head>
 <body>
     <h1>Iframes</h1>
+    <h2>Uso básico para iframes</h2>
     <p>
         os iframes são "sites dentro de sites", veja:
         <br>
@@ -34,17 +35,17 @@
     </p>
     <p>
         Existem sites que não podem ser colocados em iframes, por exemplo o site do
-        <iframe src="https://google.com.br" frameborder="0"></iframe> google 
+        <iframe src="https://google.com.br" frameborder="0"></iframe>
         <!--    ^Iframe com acesso negado   -->
     </p>
     <p>
-        Acesse também o repositório do github do 
+        Acesse também o repositório do github do
         <!--    tamanho padrão: 300px x 150px   -->
         <iframe src="https://gustavoguanabara.github.io" frameborder="1" width="400px" height="200px"></iframe> 
         <!--    ^Iframe com tamanho manipuladao no HTML    -->
     </p>
     <p>
-        Visite o repositório do github do
+        Visite o seguinte repositório do github:
         <iframe src="https://pedrobtavares.github.io/curso-HTML5-CSS3" frameborder="0" id="estilizado" style="width: 250px; height: 175px;"></iframe>
         <!--    ^Iframe com estilo nas CSS    -->
     </p>
@@ -68,7 +69,42 @@
         <br>
         <a href="teste2.html" target="linkFrame">acesse outro site pelo iframe</a>
         <br>
-        <iframe src="" frameborder="1" name="linkFrame"></iframe>
+        <iframe 
+        srcdoc="
+            <h1>Escolha um link dos links acima</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure fugiat, laborum at sed soluta, dignissimos saepe consequuntur repellat ad adipisci dicta et deleniti quia corrupti sit facilis hic praesentium delectus.</p>
+            <img src='../desafio-modulo3/imagens/background001.jpg' alt='imagem de exemplo' height= '140px' width= '250px'>
+        " 
+        frameborder="1" name="linkFrame"></iframe>
+        <!--    ^Iframe com navegação através de links e com conteúdo    -->
+    </p>
+    <p>
+        É importante ter cuidados em relação a segurança dos iframes.
+        <br>
+        <iframe src="https://pedrobtavares.github.io/testes/rifa" sandbox="sandbox" referrerpolicy="no-referrer"></iframe>
+        <br>
+        <iframe src="teste2.html" sandbox="allow-same-origin allow-forms allow-scripts" referrerpolicy="no-referrer"></iframe>
+        <!--    ^Iframes com exemplos de parâmetros para segurança    -->
+    </p>
+    <hr>
+    <h2>Usos diversos para iframes</h2>
+    <p>
+        Um video externo é exibido através de um iframe.
+        <br>
+        <iframe width="470" height="264" src="https://www.youtube.com/embed/dzhJsc1YszU?list=PLHz_AreHm4dkcVCk2Bn_fdVQ81Fkrh6WT" title="Dicas para iframes melhores - @Curso em Vídeo HTML5 e CSS3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <!--    ^Iframe/video    -->
+    </p>
+    <p>
+        Um iframe pode exibir um mapa.
+        <br>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.704390357026!2d-47.445585225481544!3d-23.47112517886192!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c58bde8fb2293b%3A0x60f3edfbb7418f65!2sJud%C3%B4%20Tatsu!5e0!3m2!1spt-BR!2sbr!4v1715905663863!5m2!1spt-BR!2sbr" width="80%" height="250px" style="border: solid 2px black; display: block; margin: auto;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://embed.waze.com/iframe?zoom=15&lat=-23.478047&lon=-47.477803&ct=livemap" width="80%" height="250px" style="border: solid 2px black; display: block; margin: auto;" allowfullscreen></iframe>
+        <!--    ^Iframes/mapas    -->
+    </p>
+    <p>
+        Documentos do google docs também podem ser exibidas com essa tag.
+        <br>
+        <iframe src="https://docs.google.com/document/d/e/2PACX-1vRNwFAxYVMxIK11tfEXf2Nq9ssv56j1-avNuLc4Si8xmQHx6RocnRapnupmt705T4QNc1qI_Yjqkrb4/pub?embedded=true"></iframe>
     </p>
 </body>
 </html>
