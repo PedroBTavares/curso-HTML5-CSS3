@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício de formulário 4</title>
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulário 4</h1>
+    <form method="get" autocomplete="on">
+        <fieldset>
+            <legend>dados pessoais</legend>
+            <p>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" autocomplete="email" placeholder="digite seu email" required>
+            </p>
+            <p>
+                <label for="tel">Telefone:</label>
+                <input type="tel" name="tel" id="tel" autocomplete="tel" placeholder="digite seu número" pattern="^[0-9]{4,5}-[0-9]{4}$" required>
+                <!-- Estudar RegEx (pattern) -->
+            </p>
+        </fieldset>
+        <p>
+            <input type="submit" value="enviar">
+            <input type="reset" value="limpar tudo">
+        </p>
+    </form>
+</body>
+</html><!-- {\d{9},\d{8},\d{5}-\d{4},} -->
