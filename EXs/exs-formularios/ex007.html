@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício de formulário 7</title>
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulário 7</h1>
+
+    <form method="get" autocomplete="on">
+        <p>
+            <label for="est">Escolha o estado onde mora:</label>
+            <select name="est" id="est">
+                <optgroup label="Sudeste">
+                    <option value="SP">São Paulo</option>
+                    <option value="BA">Bahia</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="ES">Espirito Santo</option>
+                </optgroup>
+
+                <optgroup label="Sul">
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="PR">Paraná</option>
+                </optgroup>
+                
+                <optgroup label="Centro-Oeste">
+                    <option value="MG">Minas Gerais</option>
+                    <option value="GO">Goiás</option>
+                    <option value="TO">Tocantins</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="DF">Distrito Federal</option>
+                </optgroup>
+
+                <optgroup label="Norte">
+                    <option value="PA">Pará</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AC">Ácre</option>
+                    <option value="RR">Roraima</option>
+                    <option value="RO">Rondônia</option>
+                </optgroup>
+
+                <optgroup label="Nordeste">
+                    <option value="SE">Sergipe</option>
+                    <option value="CE">Ceará</option>
+                    <option value="AL">Alágoas</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                </optgroup>
+            </select>
+        </p>
+        <p>
+            <label for="prof">Selecione ou digite a área em que trabalha:</label>
+            <input type="text" name="prof" id="prof" list="lstprof">
+            <datalist id="lstprof">
+                <option value="TI">Tecnologia da Informação</option>
+                <option value="MED">Medicina</option>
+                <option value="ADM">Administração</option>
+                <option value="SEG">Segurança</option>
+                <option value="MIL">Militar</option>
+            </datalist>
+        </p>
+        <p>
+            <label for="msg">Digite uma mensagem para os trabalhadores da sua área e estado:</label> <br>
+            <textarea name="msg" id="msg" cols="50" rows="10"></textarea>
+        </p>
+        <p>
+            <input type="submit" value="enviar">
+            <input type="reset" value="limpar">
+        </p>
+    </form>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício de formulário 6</title>
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulário 6</h1>
+
+    <form method="get" autocomplete="on">
+        <p>
+            <label for="n1">1° Número:</label>
+            <input type="number" name="n1" id="n1" required
+            oninput="soma.value = Number(n1.value) + Number(n2.value)">
+        </p>
+        <p>
+            <label for="n2">2° Número:</label>
+            <input type="number" name="n2" id="n2" required
+            oninput="soma.value = Number(n1.value) + Number(n2.value)">
+        </p>
+        <p>
+            <label for="soma">Soma:</label>
+            <output name="soma" id="soma">0</output>
+        </p>
+        <p>
+            <input type="range" name="mdd" id="mdd" min="0" max="10"
+            oninput="mcd.value = mdd.value">
+            <output name="mcd" id="mcd">5</output>
+        </p>
+        <p>
+            <label for="adn">Digite o ano em que nasceu:</label>
+            <input type="number" name="adn" id="adn" min="1900" max="2024" onclick="calcular()">
+            <br>
+            Você tem:
+            <output name="idd" id="idd">0</output>
+        </p>
+        <p>
+            <input type="submit" value="enviar">
+            <input type="reset" value="limpar">
+        </p>
+    </form>
+
+    <script>
+        function calcular(){
+            idd.value = Number(new Date().getFullYear()) - Number(adn.value)
+        }
+    </script>
+</body>
+</html>
