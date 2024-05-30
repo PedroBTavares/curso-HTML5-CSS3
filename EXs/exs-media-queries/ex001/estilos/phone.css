@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+img{
+    display: block;
+    margin: auto;
+    width: 90%;
+}
+#paisagem{
+    display: none;
+}
+main{
+    width: 90%;
+}

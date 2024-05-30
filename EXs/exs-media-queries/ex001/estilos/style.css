@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: chocolate;
+    margin: 0;
+}
+header{
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+main{
+    background-color: white;
+    text-align: justify;
+    padding: 10px;
+    margin: auto;
+}
+footer{
+    font-weight: bolder;
+    background-color: blue;
+    color: yellow;
+    text-align: center;
+    padding: 10px;
+}
