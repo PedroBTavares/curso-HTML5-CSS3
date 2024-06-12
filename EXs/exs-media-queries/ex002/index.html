@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medias compiladas</title>
+
+    <style>
+        /* all */
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body{
+            height: 100vh;
+        }
+
+        /* screen and (orientation: landscape) */
+        @media screen and (orientation: landscape) {
+            body{
+                background: #233EFF url("../imagens/cev-landscape.jpg") left bottom no-repeat;
+                background-size: contain;
+            }
+        }
+
+        /* screen and (orientation: portrait) */
+        @media screen and (orientation: portrait) {
+            body{
+                background: #233EFF url("../imagens/cev-portrait.jpg") center bottom no-repeat;
+                background-size: contain;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Você pode fazer o mesmo em um arquivo CSS separado</h1>
+</body>
+</html>
