@@ -4,6 +4,9 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
 }
+header a{
+    margin: 50px;    
+}
 img{
     display: block;
     margin: auto;
