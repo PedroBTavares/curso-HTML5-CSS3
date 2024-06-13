@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+/* typical device breakpoints
+
+pequenas telas: até 600px;
+celulares: 600px até 768px
+tablets: 768px até 992px;
+desktops: 992px até 1200px;
+TV: mais de 1200px
+*/
+
+@media screen and (min-width: 768px){
+    #phone{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px){
+    body{
+        background-image: url('../../imagens/back-tablet.jpg');
+    }
+    #tablet{
+        display: inline;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px){
+    body{
+        background-image: url('../../imagens/back-pc.jpg');
+    }
+    #pc{
+        display: inline;
+    }
+
+}
+
+@media screen and (min-width: 1200px){
+    body{
+        background-image: url('../../imagens/back-tv.jpg');
+    }
+    #tv{
+        display: inline;
+    }
+    main{
+        max-width: 5000px;
+    }
+}
