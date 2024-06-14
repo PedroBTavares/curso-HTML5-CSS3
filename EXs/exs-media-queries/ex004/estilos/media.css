@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+@media screen and (max-width: 768px) {
+    ul{
+        display: none;
+    }
+    #menu{
+        background-color: #242424;
+        padding: 10px;
+        text-align: center;
+        color: white;
+    }
+    #menu:hover{
+        background-color: white;
+        color: black;
+    }
+    li{
+        display: block;
+        text-align: center;
+        border: solid 2px gray;
+    }
+}
+@media screen and (min-width: 768px) {
+    #menu{
+        display: none;
+    }
+    li{
+        display: inline-block;
+    }
+}
