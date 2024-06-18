@@ -5,6 +5,7 @@
         display: none;
     }
     #menu{
+        display: block;
         background-color: #242424;
         padding: 10px;
         text-align: center;
@@ -14,17 +15,12 @@
         background-color: white;
         color: black;
     }
+    .itens{
+        display: block;
+    }
     li{
         display: block;
         text-align: center;
         border: solid 2px gray;
-    }
-}
-@media screen and (min-width: 768px) {
-    #menu{
-        display: none;
-    }
-    li{
-        display: inline-block;
     }
 }
