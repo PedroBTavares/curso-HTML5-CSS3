@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="estilos/mobile.css" media="all">
     <link rel="stylesheet" href="estilos/style.css" media="all">
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 </head>
 <body>
@@ -20,15 +20,21 @@
                     <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
                     <form method="post" autocomplete="on">
                         <div class="input cxtxt">
-                            <span class="material-symbols-outlined">person</span>
+                            <span class="material-icons">person</span>
                             <input type="email" name="email" id="email" autocomplete="email" placeholder="seu e-mail" class="cxtxt">
                         </div>
                         <div class="input cxtxt">
-                            <span class="material-symbols-outlined">vpn_key</span>
+                            <span class="material-icons">vpn_key</span>
                             <input type="password" name="senha" id="senha" autocomplete="current-password" placeholder="sua senha" class="cxtxt">
                         </div>
-                        <div class="input"><input type="submit" value="entrar" id="entrar"></div>
-                        <div class="input"><input type="button" value="Esqueci a senha" id="lembrar"></div>
+                        <div class="input"><input type="submit" value="Entrar" id="entrar"></div>
+                        <div class="input">
+                            <a href="#" id="lembrar">
+                                <span id="lembrarP">Esqueci a senha</span>
+                                <span class="material-icons" style="color: #2D6462;">mail</span>
+                                
+                            </a>
+                        </div>
                     </form>
             </div>
     </main>
