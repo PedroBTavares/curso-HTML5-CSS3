@@ -2,7 +2,6 @@
 
 *{
     margin: 0;
-    /* box-sizing: border-box; */
 }
 
 
@@ -17,7 +16,6 @@ body{
 
 main{
     position: absolute;
-    transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
     height: 515px;
@@ -26,6 +24,7 @@ main{
     box-shadow: 0 0 10px 2px #00000085;
     transition: width .3s, height .3s;
     transition-timing-function: ease;
+    transform: translate(-50%, -50%);
 }
 #imagem{
     border-radius: 15px 15px 0 0;
@@ -65,12 +64,15 @@ input{
     font-size: 1em;
 }
 input.cxtxt{
-    transform: translateY(-8px);
     width: calc(100% - 54px);
     height: 100%;
     padding: 0 4px;
 
     background-color: #94CFCD;
+    transform: translateY(-8px);
+}
+input.cxtxt:focus-within{
+    background-color: white;
 }
 #entrar{
     background-color: #53AAA7;
