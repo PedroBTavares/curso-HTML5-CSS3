@@ -12,54 +12,268 @@
 <body>
     <h1>Exercício 1 de flexbox</h1>
 
-    <div class="pai" id="p1">
-        <div class="filho"><span class="material-icons" style="color: green;">check</span></div>
-        <div class="filho"></div>
-        <div class="filho"></div>
-        <div class="filho"></div>
-    </div>
-
-    <div class="pai" id="p2">
-        <div class="filho"><span class="material-icons" style="color: red;">close</span></div>
-        <div class="filho"></div>
-        <div class="filho"></div>
-        <div class="filho"></div>
-    </div>
-
-
-    <h2>Direções</h2>
-    <div class="grupo" id="g1">
-        <div id="row">
-            <div class="pai" id="p3">row
-                <div class="filho">início</div>
+    <main>
+        <div class="conjunto">
+            <div class="pai" id="p1">
+                <div class="filho"><span class="material-icons" style="color: green;">check</span></div>
                 <div class="filho"></div>
-                <div class="filho">fim</div>
+                <div class="filho"></div>
+                <div class="filho"></div>
             </div>
-            <div class="pai" id="p4">
-                <div class="filho">início</div>
+            <div class="pai" id="p2">
+                <div class="filho"><span class="material-icons" style="color: red;">close</span></div>
                 <div class="filho"></div>
-                <div class="filho">fim</div>
-            row-reverse</div>
+                <div class="filho"></div>
+                <div class="filho"></div>
+            </div>
         </div>
 
-        <div id="column">
-            <div class="pai" id="p5">column
-                <div class="filho">início</div>
-                <div class="filho"></div>
-                <div class="filho">fim</div>
+
+        <div class="conjunto">
+            <h2>Direções</h2>
+            <div class="grupo" id="g1">
+                <div id="row">
+                    <div class="pai" id="p3">row
+                        <div class="filho">início</div>
+                        <div class="filho"></div>
+                        <div class="filho">fim</div>
+                    </div>
+                    <div class="pai" id="p4">
+                        <div class="filho">início</div>
+                        <div class="filho"></div>
+                        <div class="filho">fim</div>
+                    row-reverse</div>
+                </div>
+                <div id="column">
+                    <div class="pai" id="p5">column
+                        <div class="filho">início</div>
+                        <div class="filho"></div>
+                        <div class="filho">fim</div>
+                    </div>
+                    <div class="pai" id="p6">
+                        <div class="filho">início</div>
+                        <div class="filho"></div>
+                        <div class="filho">fim</div>
+                    column-reverse</div>
+                </div>
             </div>
-            <div class="pai" id="p6">
-                <div class="filho">início</div>
-                <div class="filho"></div>
-                <div class="filho">fim</div>
-            column-reverse</div>
+            <p style="text-align: left;">Padrão: row</p>
         </div>
-    </div>
-    <p style="text-align: left;">Padrão: row</p>
 
-    <h2>Eixos</h2>
-    <img src="eixos-flex1.jpeg" alt="tabela de eixos de contêiners flex">
-    <img src="eixos-flex2.jpeg" alt="tabela de eixos de contêiners flex">
 
+        <div class="conjunto">
+            <h2>Eixos</h2>
+            <img src="eixos-flex1.jpeg" alt="tabela de eixos de contêiners flex">
+            <img src="eixos-flex2.jpeg" alt="tabela de eixos de contêiners flex">
+        </div>
+
+
+        <div class="conjunto">
+            <h2>Empacotamento (wrap)</h2>
+            <div class="grupo" id="g2">
+                <div class="grupo" id="g3">
+                    <h3>nowrap</h3>
+                    <div class="pai" id="p7">
+                        <div class="filho">row</div>
+                        <div class="filho">filho</div>
+                        <div class="filho">filho</div>
+                        <div class="filho">filho</div>
+                    </div>
+                    <div class="pai" id="p8">
+                        <div class="filho">row-reverse</div>
+                        <div class="filho">filho</div>
+                        <div class="filho">filho</div>
+                    </div>
+                    <div class="pai" id="p9">
+                        <div class="filho">column</div>
+                        <div class="filho">filho</div>
+                        <div class="filho">filho</div>
+                        <div class="filho">filho</div>
+                    </div>
+                    <div class="pai" id="p10">
+                        <div class="filho">column-reverse</div>
+                        <div class="filho">filho</div>
+                        <div class="filho">filho</div>
+                        <div class="filho">filho</div>
+                    </div>
+                </div>
+                <div class="grupo" id="g4">
+                    <h3>wrap</h3>
+                    <div class="pai" id="p11">
+                        <div class="filho">row</div>
+                        <div class="filho">filho</div>
+                        <div class="filho">filho</div>
+                        <div class="filho">filho</div>
+                    </div>
+                    <div class="pai" id="p12">
+                        <div class="filho">row-reverse</div>
+                        <div class="filho">filho</div>
+                        <div class="filho">filho</div>
+                        <div class="filho">filho</div>
+                    </div>
+                    <div class="pai" id="p13">
+                        <div class="filho">column</div>
+                        <div class="filho">filho</div>
+                        <div class="filho">filho</div>
+                        <div class="filho">filho</div>
+                    </div>
+                    <div class="pai" id="p14">
+                        <div class="filho">column-reverse</div>
+                        <div class="filho">filho</div>
+                        <div class="filho">filho</div>
+                        <div class="filho">filho</div>
+                    </div>
+                </div>
+                <div class="grupo" id="g5">
+                    <h3>wrap-reverse</h3>
+                    <div class="pai" id="p15">
+                        <div class="filho">row</div>
+                        <div class="filho">filho</div>
+                        <div class="filho">filho</div>
+                        <div class="filho">filho</div>
+                    </div>
+                    <div class="pai" id="p16">
+                        <div class="filho">row-reverse</div>
+                        <div class="filho">filho</div>
+                        <div class="filho">filho</div>
+                        <div class="filho">filho</div>
+                    </div>
+                    <div class="pai" id="p17">
+                        <div class="filho">column</div>
+                        <div class="filho">filho</div>
+                        <div class="filho">filho</div>
+                        <div class="filho">filho</div>
+                    </div>
+                    <div class="pai" id="p18">
+                        <div class="filho">column-reverse</div>
+                        <div class="filho">filho</div>
+                        <div class="filho">filho</div>
+                        <div class="filho">filho</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="conjunto">
+            <h2>Alinhamento</h2>
+            <div class="grupo" id="g6">
+                <h3>justify-content</h3>
+                <div class="grupo" id="g7">
+                    <div class="pai" id="p19">
+                        <div class="filho">flex-start</div>
+                        <div class="filho"></div>
+                        <div class="filho"></div>
+                        <div class="filho"></div>
+                    </div>
+                    <div class="pai" id="p20">
+                        <div class="filho">flex-end</div>
+                        <div class="filho"></div>
+                        <div class="filho"></div>
+                        <div class="filho"></div>
+                    </div>
+                    <div class="pai" id="p21">
+                        <div class="filho">center</div>
+                        <div class="filho"></div>
+                        <div class="filho"></div>
+                        <div class="filho"></div>
+                    </div>
+                    <div class="pai" id="p22">
+                        <div class="filho">space-between</div>
+                        <div class="filho"></div>
+                        <div class="filho"></div>
+                        <div class="filho"></div>
+                    </div>
+                    <div class="pai" id="p23">
+                        <div class="filho">space-evenly</div>
+                        <div class="filho"></div>
+                        <div class="filho"></div>
+                        <div class="filho"></div>
+                    </div>
+                    <div class="pai" id="p24">
+                        <div class="filho">space-around</div>
+                        <div class="filho"></div>
+                        <div class="filho"></div>
+                        <div class="filho"></div>
+                    </div>
+                </div>
+                <p>Padrão: flex-start</p>
+                <h3>align-itens (row)</h3>
+                <div class="grupo" id="g8">
+                    <div class="pai" id="p25">
+                        <div class="filho">stretch</div>
+                        <div class="filho"></div>
+                        <div class="filho"></div>
+                        <div class="filho"></div>
+                    </div>
+                    <div class="pai" id="p26">
+                        <div class="filho">flex-start</div>
+                        <div class="filho"></div>
+                        <div class="filho"></div>
+                        <div class="filho"></div>
+                    </div>
+                    <div class="pai" id="p27">
+                        <div class="filho">flex-end</div>
+                        <div class="filho"></div>
+                        <div class="filho"></div>
+                        <div class="filho"></div>
+                    </div>
+                    <div class="pai" id="p28">
+                        <div class="filho">center</div>
+                        <div class="filho"></div>
+                        <div class="filho"></div>
+                        <div class="filho"></div>
+                    </div>
+                </div>
+                <h3>(column)</h3>
+                <div class="grupo" id="g9">
+                    <div class="pai" id="p29">
+                        <div class="filho">stretch</div>
+                        <div class="filho"></div>
+                        <div class="filho"></div>
+                        <div class="filho"></div>
+                    </div>
+                    <div class="pai" id="p30">
+                        <div class="filho">flex-start</div>
+                        <div class="filho"></div>
+                        <div class="filho"></div>
+                        <div class="filho"></div>
+                    </div>
+                    <div class="pai" id="p31">
+                        <div class="filho">flex-end</div>
+                        <div class="filho"></div>
+                        <div class="filho"></div>
+                        <div class="filho"></div>
+                    </div>
+                    <div class="pai" id="p32">
+                        <div class="filho">center</div>
+                        <div class="filho"></div>
+                        <div class="filho"></div>
+                        <div class="filho"></div>
+                    </div>
+                </div>
+                <p>Padrão: stretch</p>
+            </div>
+        </div>
+
+
+        <div class="conjunto">
+            <h2>Centralização</h2>
+            <div class="grupo" id="g10">
+                <div class="pai" id="p33">
+                    <div class="filho"></div>
+                </div>
+                <div class="pai" id="p34">
+                    <div class="filho"></div>
+                    <div class="filho"></div>
+                </div>
+                <div class="pai" id="p35">
+                    <div class="filho"></div>
+                    <div class="filho"></div>
+                    <div class="filho"></div>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
