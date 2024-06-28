@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +10,7 @@
 
 </head>
 <body>
-    <h1>Exercício 1 de flexbox</h1>
+    <h1>Flexbox - atributos para conteinêrs</h1>
 
     <main>
         <div class="conjunto">
@@ -273,6 +273,106 @@
                     <div class="filho"></div>
                 </div>
             </div>
+        </div>
+
+        <div class="conjunto">
+            <h2>Alinhamento empacotado (align-content)</h2>
+            <div class="grupo" id="g11">
+
+                <h3>(row)</h3>
+                <div class="grupo" id="g12">
+                    <div>
+                        stretch<div class="pai" id="p36">
+                            <div class="filho"></div>
+                            <div class="filho"></div>
+                            <div class="filho"></div>
+                        </div>
+                    </div>
+                    <div>
+                        flex-start<div class="pai" id="p37">
+                            <div class="filho"></div>
+                            <div class="filho"></div>
+                            <div class="filho"></div>
+                        </div>
+                    </div>
+                    <div>
+                        flex-end<div class="pai" id="p38">
+                            <div class="filho"></div>
+                            <div class="filho"></div>
+                            <div class="filho"></div>
+                        </div>
+                    </div>
+                    <div>
+                        center<div class="pai" id="p39">
+                            <div class="filho"></div>
+                            <div class="filho"></div>
+                            <div class="filho"></div>
+                        </div>
+                    </div>
+                    <div>
+                        space-between<div class="pai" id="p40">
+                            <div class="filho"></div>
+                            <div class="filho"></div>
+                            <div class="filho"></div>
+                        </div>
+                    </div>
+                    <div>
+                        space-evenly<div class="pai" id="p41">
+                            <div class="filho"></div>
+                            <div class="filho"></div>
+                            <div class="filho"></div>
+                        </div>
+                    </div>
+                    <div>
+                        space-around<div class="pai" id="p42">
+                            <div class="filho"></div>
+                            <div class="filho"></div>
+                            <div class="filho"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <h3>(column)</h3>
+                <div class="grupo" id="g13">
+                    stretch<div class="pai" id="p43">
+                        <div class="filho"></div>
+                        <div class="filho"></div>
+                        <div class="filho"></div>
+                    </div>
+                    flex-start<div class="pai" id="p44">
+                        <div class="filho"></div>
+                        <div class="filho"></div>
+                        <div class="filho"></div>
+                    </div>
+                    flex-end<div class="pai" id="p45">
+                        <div class="filho"></div>
+                        <div class="filho"></div>
+                        <div class="filho"></div>
+                    </div>
+                    center<div class="pai" id="p46">
+                        <div class="filho"></div>
+                        <div class="filho"></div>
+                        <div class="filho"></div>
+                    </div>
+                    space-between<div class="pai" id="p47">
+                        <div class="filho"></div>
+                        <div class="filho"></div>
+                        <div class="filho"></div>
+                    </div>
+                    space-evenly<div class="pai" id="p48">
+                        <div class="filho"></div>
+                        <div class="filho"></div>
+                        <div class="filho"></div>
+                    </div>
+                    space-around<div class="pai" id="p49">
+                        <div class="filho"></div>
+                        <div class="filho"></div>
+                        <div class="filho"></div>
+                    </div>
+                </div>
+            </div>
+            <p>Padrão: stretch</p>
+            <p>Obs: a configuração do align-content se sobrepõe ao align-items com excessão de quando ele (align-content) está configurado como stretch.</p>
         </div>
     </main>
 </body>

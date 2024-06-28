@@ -12,7 +12,6 @@ body{
 main{
     display: flex;
     flex-flow: row wrap;
-    align-items: space-between;
 }
 .pai{
     display: flex;
@@ -33,13 +32,20 @@ main{
     border: solid 2px black;
     margin: 5px;
 }
+.conjunto{
+    display: flex;
+    flex: auto;
+    flex-flow: column nowrap;
+    align-items: stretch;
+    border-top: solid 20px rgb(00, 00, 00, .25);
+}
 h2{
     margin-top: 50px;
 }
 h3{
     margin-top: 20px;
 }
-
+/* Configurações gerais */
 
 
 #p1{
@@ -50,7 +56,7 @@ h3{
     margin: 0 .5%;
 }
 
-
+/* ---------------------- */
 
 #p2{
     width: 40vw;
@@ -61,7 +67,7 @@ h3{
     margin: 2%;
 }
 
-
+/* -------------------------- */
 
 #g1{
     display: flex;
@@ -89,7 +95,7 @@ h3{
     flex-direction: row;
 }
 
-
+/* -------------------------- */
 
 img{
     max-width: 49%;
@@ -138,9 +144,9 @@ img{
 
 #g2 .pai :nth-child(1){background-color: chartreuse;}
 
+/* ----------------------------------- */
 
 #g6{
-    /* display: inline-block; */
     max-width: 500px;
 }
 #g6 .filho{
@@ -171,7 +177,9 @@ img{
     height: fit-content;
 }
 
+#g6 .pai :nth-child(1){background-color: chartreuse;}
 
+/* --------------------------------- */
 
 #p33, #p34, #p35{
     width: 30vw;
@@ -188,3 +196,39 @@ img{
 #g10 .filho{
     flex: none;
 }
+
+/* ----------------------------------- */
+
+#g11{
+    max-width: 400px;
+}
+#g11 .filho{
+    flex: none;
+}
+#g11 .pai{
+    flex-wrap: wrap;
+}
+#g12{
+    display: flex;
+    flex-wrap: wrap;
+}
+#g12 > *{
+    margin-right: 25px;
+}
+#g12 .pai{
+    flex-direction: row;
+    width: 35px;
+    height: 100px;
+}
+#g13 .pai{
+    flex-direction: column;
+    height: 35px;
+}
+
+#p36, #p43{align-content: stretch;}
+#p37, #p44{align-content: flex-start;}
+#p38, #p45{align-content: flex-end;}
+#p39, #p46{align-content: center;}
+#p40, #p47{align-content: space-between;}
+#p41, #p48{align-content: space-evenly;}
+#p42, #p49{align-content: space-around;}
