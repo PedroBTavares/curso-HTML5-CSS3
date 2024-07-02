@@ -21,7 +21,6 @@ main{
     margin: 10px 0;
 }
 .filho{
-    flex: auto;
     background-color: white;
     border: solid 2px black;
     text-align: center;
@@ -45,20 +44,139 @@ h2{
 h3{
     margin-top: 20px;
 }
+p{
+    max-width: 300px;
+}
+
+.botao1, .botao2{
+    background-color: yellow;
+    padding: 5px;
+    box-shadow: 0 0 10px rgb(00, 00, 00, .5);
+    border: solid 1px black;
+}
+.botao1:hover{
+    background-color: rgb(180, 180, 0);
+}
 /* Configurações gerais */
 
-
-
-#g1{
-    max-width: 400px;
+#g1 .filho{
+    flex: auto;
 }
-#p2 > :nth-child(1){order: -4;}
-#p2 > :nth-child(2){order: 9;}
-#p2 > :nth-child(3){order: 2;}
-#p2 > :nth-child(4){order: 7;}
-#p2 > :nth-child(5){order: 1;}
+#p1.afetado > :nth-child(3){order: -1;}
+#p1.afetado > :nth-child(2){order: 1;}
 
-#p3 > :nth-child(1){order: 5;}
-#p3 > :nth-child(3){order: -4;}
-#p3 > :nth-child(4){order: 2;}
-#p3 > :nth-child(5){order: 6;}
+#p2.afetado > :nth-child(1){order: 9;}
+#p2.afetado > :nth-child(2){order: 2;}
+#p2.afetado > :nth-child(3){order: -4;}
+#p2.afetado > :nth-child(4){order: 1;}
+#p2.afetado > :nth-child(5){order: 7;}
+
+#p3.afetado > :nth-child(1){order: 5;}
+#p3.afetado > :nth-child(3){order: -4;}
+#p3.afetado > :nth-child(4){order: 2;}
+#p3.afetado > :nth-child(5){order: 6}
+
+/* -------------------------------- */
+
+#g2 .filho{
+    flex: auto;
+}
+#p4{
+    flex-flow: row nowrap;
+    height: 100px;
+}
+#p5{
+    flex-flow: column nowrap;
+    width: calc(100% - 24px);
+    min-width: 100px;
+}
+
+#g2 .afetado.pai :nth-child(1){align-self: auto;}
+#g2 .afetado.pai :nth-child(2){align-self: flex-start;}
+#g2 .afetado.pai :nth-child(3){align-self: flex-end;}
+#g2 .afetado.pai :nth-child(4){align-self: center;}
+#g2 .afetado.pai :nth-child(5){align-self: stretch;}
+
+/* ------------------------------------------ */
+
+#g4 .filho, #g5 .filho{
+    flex-basis: 50px;
+}
+
+#g4 .pai{
+    flex-direction: row;
+}
+#p6{
+    flex-wrap: nowrap;
+}
+#p7{
+    flex-wrap: wrap;
+}
+#g4 .afetado.pai{
+    width: 160px;
+}
+
+#g5 .pai{
+    flex-direction: column;
+}
+#p8{
+    flex-wrap: nowrap;
+}
+#p9{
+    flex-wrap: wrap;
+}
+#g5 .afetado.pai{
+    height: 160px;
+}
+
+#g6 .pai :nth-child(2){
+    flex-basis: 75px;
+}
+#p10{
+    flex-wrap: nowrap;
+}
+#p11{
+    flex-wrap: wrap;
+}
+#g6 .afetado.pai{
+    width: 130px;
+}
+
+/* ----------------------------------- */
+
+#g7 .filho{
+    flex-basis: 50px;
+}
+#g8 .pai{
+    flex-flow: row nowrap;
+    width: 192px;
+}
+#g9{
+    display: flex;
+    flex-flow: row wrap;
+}
+#g9 .pai{
+    flex-flow: column nowrap;
+}
+#g9 > *{
+    flex: auto;
+    margin: 5px;
+}
+
+#p12 .filho, #p16 .filho{flex-shrink: 1; flex-grow: 0;}
+#p13 .filho, #p17 .filho{flex-shrink: 0; flex-grow: 0;}
+#p14 .filho, #p18 .filho{flex-shrink: 1; flex-grow: 1;}
+#p15 .filho, #p19 .filho{flex-shrink: 0; flex-grow: 1;}
+
+#g8 .aumentar.pai{
+    width: 256px;
+}
+#g9 .aumentar.pai{
+    height: 256px;
+}
+#g8 .diminuir.pai{
+    width: 160px;
+}
+#g9 .diminuir.pai{
+    height: 160px;
+}
