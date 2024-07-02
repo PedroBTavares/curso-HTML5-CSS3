@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercício 2 de flexbox</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" media="all">
 
 </head>
 <body>
@@ -70,10 +70,10 @@
         </div>
 
         <div class="conjunto">
-            <h2>Tamanho dos itens (flex-basis)</h2>
+            <h2>Tamanho base dos itens (flex-basis)</h2>
             <p>Obs: as configurações já estarão aplicadas, ao apertar o botão o tamanho do contêiner irá diminuir</p>
             <div class="grupo" id="g3">
-                <h3>row</h3>
+                <h3>Aplicado a todos os elementos</h3>
                 <div class="grupo" id="g4">
                     <div class="pai" id="p6">
                         <div class="filho">nowrap</div>
@@ -89,7 +89,7 @@
                     <input type="button" class="botao1">
                 </div>
 
-                <h3>column</h3>
+                <h3>Aplicado à um único elemento</h3>
                 <div class="grupo" id="g5">
                     <div class="pai" id="p8">
                         <div class="filho">nowrap</div>
@@ -104,97 +104,162 @@
                     </div>
                     <input type="button" class="botao1">
                 </div>
-                <h3>Aplicado à um único elemento</h3>
-                <div class="grupo" id="g6">
-                    <div class="pai" id="p10">
-                        <div class="filho">nowrap</div>
-                        <div class="filho"></div>
-                        <div class="filho"></div>
-                    </div>
-                    <input type="button" class="botao1">
-                    <div class="pai" id="p11">
-                        <div class="filho">wrap</div>
-                        <div class="filho"></div>
-                        <div class="filho"></div>
-                    </div>
-                    <input type="button" class="botao1">
-                </div>
             </div>
+            <p>Padrão: auto (o tamanho base é o tamanho do conteúdo)</p>
         </div>
 
         <div class="conjunto">
             <h2>Aumento e encolhimento (flex-grow - flex-shrink)</h2>
-            <p>1 = pode crescer ou encolher; 0 = não pode crescer ou encolher</p>
-            <div class="grupo" id="g7">
-                <h3>row</h3>
-                <div class="grupo" id="g8">
-                    <div>
-                        <div class="pai" id="p12">
-                                <div class="filho">shrink: 1</div>
+            <p>1 ou mais = pode crescer ou encolher; 0 = não pode crescer ou encolher</p>
+            <div class="grupo" id="g6">
+                <div>
+                    <h3>nowrap</h3>
+                    <div class="grupo" id="g7">
+                        <div>
+                            <div class="pai" id="p10">
+                                    <div class="filho">shrink: 1</div>
+                                    <div class="filho">grow: 0</div>
+                                    <div class="filho"></div>
+                            </div>
+                            <input type="button" class="botao2">
+                        </div>
+                        <div>
+                            <div class="pai" id="p11">
+                                <div class="filho">shrink: 0</div>
                                 <div class="filho">grow: 0</div>
                                 <div class="filho"></div>
+                            </div>
+                            <input type="button" class="botao2">
                         </div>
-                        <input type="button" class="botao2">
-                    </div>
-                    <div>
-                        <div class="pai" id="p13">
-                            <div class="filho">shrink: 0</div>
-                            <div class="filho">grow: 0</div>
-                            <div class="filho"></div>
+                        <div>
+                            <div class="pai" id="p12">
+                                <div class="filho">shrink: 1</div>
+                                <div class="filho">grow: 1</div>
+                                <div class="filho"></div>
+                            </div>
+                            <input type="button" class="botao2">
                         </div>
-                        <input type="button" class="botao2">
-                    </div>
-                    <div>
-                        <div class="pai" id="p14">
-                            <div class="filho">shrink: 1</div>
-                            <div class="filho">grow: 1</div>
-                            <div class="filho"></div>
+                        <div>
+                            <div class="pai" id="p13">
+                                <div class="filho">shrink: 0</div>
+                                <div class="filho">grow: 1</div>
+                                <div class="filho"></div>
+                            </div>
+                            <input type="button" class="botao2">
                         </div>
-                        <input type="button" class="botao2">
-                    </div>
-                    <div>
-                        <div class="pai" id="p15">
-                            <div class="filho">shrink: 0</div>
-                            <div class="filho">grow: 1</div>
-                            <div class="filho"></div>
-                        </div>
-                        <input type="button" class="botao2">
                     </div>
                 </div>
 
-                <h3>column</h3>
-                <div class="grupo" id="g9">
-                    <div>
-                        <div class="pai" id="p16">
-                            <div class="filho">shrink: 1</div>
-                            <div class="filho">grow: 0</div>
-                            <div class="filho"></div>
+                <div>
+                    <h3>wrap</h3>
+                    <div class="grupo" id="g8">
+                        <div>
+                            <div class="pai" id="p14">
+                                <div class="filho">shrink: 1</div>
+                                <div class="filho">grow: 0</div>
+                                <div class="filho"></div>
+                            </div>
+                            <input type="button" class="botao2">
                         </div>
-                        <input type="button" class="botao2">
-                    </div>
-                    <div>
-                        <div class="pai" id="p17">
-                            <div class="filho">shrink: 0</div>
-                            <div class="filho">grow: 0</div>
-                            <div class="filho"></div>
+                        <div>
+                            <div class="pai" id="p15">
+                                <div class="filho">shrink: 0</div>
+                                <div class="filho">grow: 0</div>
+                                <div class="filho"></div>
+                            </div>
+                            <input type="button" class="botao2">
                         </div>
-                        <input type="button" class="botao2">
+                        <div>
+                            <div class="pai" id="p16">
+                                <div class="filho">shrink: 1</div>
+                                <div class="filho">grow: 1</div>
+                                <div class="filho"></div>
+                            </div>
+                            <input type="button" class="botao2">
+                        </div>
+                        <div>
+                            <div class="pai" id="p17">
+                                <div class="filho">shrink: 0</div>
+                                <div class="filho">grow: 1</div>
+                                <div class="filho"></div>
+                            </div>
+                            <input type="button" class="botao2">
+                        </div>
                     </div>
-                    <div>
+                </div>
+
+                <div>
+                    <h3>Aplicações individuais</h3>
+                    <p>Qando houver números maiores que zero e diferentes entre si será criada uma proporção para o controle do aumento e encolhimento dos itens em que quanto maior a proporção maior a velocidade de aumento ou encolhimento.</p>
+                    <p>s = shrink; g = grow</p>
+                    <div class="grupo" id="g9">
                         <div class="pai" id="p18">
-                            <div class="filho">shrink: 1</div>
-                            <div class="filho">grow: 1</div>
-                            <div class="filho"></div>
+                            <div class="filho">g 0</div>
+                            <div class="filho" style="flex-grow: 1;">g 1</div>
+                            <div class="filho">g 0</div>
+                        </div>
+                        <input type="button" class="botao2">
+                        <div class="pai" id="p19">
+                            <div class="filho" style="flex-shrink: 2;">s 2</div>
+                            <div class="filho" style="flex-shrink: 2;">s 2</div>
+                            <div class="filho">s 0</div>
+                        </div>
+                        <input type="button" class="botao2">
+                        <div class="pai" id="p20">
+                            <div class="filho" style="flex-grow: 1">g 1; s 1</div>
+                            <div class="filho" style="flex-grow: 1; flex-shrink: 0;">g 1; s 0</div>
+                            <div class="filho" style="flex-grow: 0;">g 0; s 1</div>
+                        </div>
+                        <input type="button" class="botao2">
+                        <div class="pai" id="p21">
+                            <div class="filho" style="flex-grow: 0; flex-shrink: 2;">g 0; s 2</div>
+                            <div class="filho" style="flex-grow: 1; flex-shrink: 1;">g 1; s 1</div>
+                            <div class="filho" style="flex-grow: 2; flex-shrink: 0;">g 2; s 0</div>
+                        </div>
+                        <input type="button" class="botao2">
+                        <div class="pai" id="p22">
+                            <div class="filho" style="flex-grow: 0; flex-shrink: 4;">g 0; s 4</div>
+                            <div class="filho" style="flex-grow: 2; flex-shrink: 2;">g 2; s 2</div>
+                            <div class="filho" style="flex-grow: 4; flex-shrink: 0;">g 4; s 0</div>
+                        </div>
+                        <input type="button" class="botao2">
+                        <div class="pai" id="p23">
+                            <div class="filho">g 0</div>
+                            <div class="filho" style="flex-grow: 5;">g 5</div>
+                            <div class="filho" style="flex-grow: 2;">g 2</div>
+                        </div>
+                        <input type="button" class="botao2">
+                        <div class="pai" id="p24">
+                            <div class="filho" style="flex-shrink: 1;">s 1</div>
+                            <div class="filho" style="flex-shrink: 1;">s 1</div>
+                            <div class="filho" style="flex-shrink: 3;">s 3</div>
+                        </div>
+                        <input type="button" class="botao2">
+                        <div class="pai" id="p25">
+                            <div class="filho" style="flex-grow: 1; flex-shrink: 1">g 1</div>
+                            <div class="filho" style="flex-grow: 3; flex-shrink: 1">g 3</div>
+                            <div class="filho" style="flex-grow: 5; flex-shrink: 1">g 10</div>
                         </div>
                         <input type="button" class="botao2">
                     </div>
-                    <div>
-                        <div class="pai" id="p19">
-                            <div class="filho">shrink: 0</div>
-                            <div class="filho">grow: 1</div>
-                            <div class="filho"></div>
-                        </div>
-                        <input type="button" class="botao2">
+                    <p>Obs: Se o conteúdo não puder ser mais encolhido o flex-shrink será ignorado</p>
+                </div>
+            </div>
+            <p>Padrão: flex-shrink: 1; flex-grow: 0</p>
+        </div>
+
+        <div class="conjunto">
+            <h2>Shorthand flex</h2>
+            <div class="grupo" id="g10">
+                <img src="shorthand-flex.jpeg" alt="gráfico sobre o shorthand flex">
+                <div>
+                    <h3>Exemplo:</h3>
+                    <div class="pai" id="p26">
+                        <div class="filho">Item 1</div>
+                        <div class="filho">Item 2</div>
+                        <div class="filho">Item 3</div>
+                        <div class="filho">Item 4</div>
+                        <div class="filho">Item 5</div>
                     </div>
                 </div>
             </div>

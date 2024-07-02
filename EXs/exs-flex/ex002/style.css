@@ -18,7 +18,7 @@ main{
     background-color: gray;
     padding: 10px;
     border: solid 2px black;
-    margin: 10px 0;
+    margin-top: 10px;
 }
 .filho{
     background-color: white;
@@ -57,7 +57,11 @@ p{
 .botao1:hover{
     background-color: rgb(180, 180, 0);
 }
+.aumentar, .diminuir{
+    transition: width 1s;
+}
 /* Configurações gerais */
+
 
 #g1 .filho{
     flex: auto;
@@ -116,8 +120,8 @@ p{
     width: 160px;
 }
 
-#g5 .pai{
-    flex-direction: column;
+#g5 .pai :nth-child(2){
+    flex-basis: 75px;
 }
 #p8{
     flex-wrap: nowrap;
@@ -126,57 +130,93 @@ p{
     flex-wrap: wrap;
 }
 #g5 .afetado.pai{
-    height: 160px;
-}
-
-#g6 .pai :nth-child(2){
-    flex-basis: 75px;
-}
-#p10{
-    flex-wrap: nowrap;
-}
-#p11{
-    flex-wrap: wrap;
-}
-#g6 .afetado.pai{
     width: 130px;
 }
 
 /* ----------------------------------- */
 
-#g7 .filho{
-    flex-basis: 50px;
-}
-#g8 .pai{
-    flex-flow: row nowrap;
-    width: 192px;
-}
-#g9{
+#g6{
     display: flex;
     flex-flow: row wrap;
 }
-#g9 .pai{
-    flex-flow: column nowrap;
+#g6 > *{
+    flex: auto;
 }
-#g9 > *{
+#g6 .filho{
+    flex-basis: 50px;
+}
+#g6 .pai{
+    width: 192px;
+}
+#g7 .pai{
+    flex-flow: row nowrap;
+}
+#g8 .pai{
+    flex-flow: row wrap;
+}
+#g8 > *{
     flex: auto;
     margin: 5px;
 }
+#g9 > *{
+    margin: 5px;
+}
 
-#p12 .filho, #p16 .filho{flex-shrink: 1; flex-grow: 0;}
-#p13 .filho, #p17 .filho{flex-shrink: 0; flex-grow: 0;}
-#p14 .filho, #p18 .filho{flex-shrink: 1; flex-grow: 1;}
-#p15 .filho, #p19 .filho{flex-shrink: 0; flex-grow: 1;}
+#p10 .filho, #p14 .filho{flex-shrink: 1; flex-grow: 0;}
+#p11 .filho, #p15 .filho{flex-shrink: 0; flex-grow: 0;}
+#p12 .filho, #p16 .filho{flex-shrink: 1; flex-grow: 1;}
+#p13 .filho, #p17 .filho{flex-shrink: 0; flex-grow: 1;}
 
-#g8 .aumentar.pai{
+#g6 .aumentar.pai{
     width: 256px;
 }
-#g9 .aumentar.pai{
-    height: 256px;
-}
-#g8 .diminuir.pai{
+#g6 .diminuir.pai{
     width: 160px;
 }
-#g9 .diminuir.pai{
-    height: 160px;
+
+
+
+#g10{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+#g10 > div{
+    flex: auto;
+}
+img{
+    max-width: calc(100vw - 60px);
+}
+#p26{
+    flex-flow: column wrap-reverse;
+    height: 120px;
+    justify-content: space-between;
+    align-content: space-evenly;
+}
+#p26 > .filho{
+    flex: 0 1 30px;
+    width: 20%;
+}
+#p26 :nth-child(3){
+    order: 4;
+    flex: 1 0 30px;
+}
+#p26 :nth-child(2){order: 1;}
+#p26 :nth-child(4){order: 2;}
+#p27 :nth-child(5){order: 3}
+
+
+@media screen and (min-width: 768px) {
+    #g9{
+        display: flex;
+        flex-flow: column wrap;
+        max-height: 500px;
+    }
+    img{
+        width: 40vw;
+    }
+    #g10 > div{
+        flex: 0 0 50vw;
+    }
 }
