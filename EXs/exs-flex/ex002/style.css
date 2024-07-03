@@ -33,7 +33,7 @@ main{
 }
 .conjunto{
     display: flex;
-    flex: auto;
+    flex: 1 1 100px;
     flex-flow: column nowrap;
     align-items: stretch;
     border-top: solid 20px rgb(00, 00, 00, .25);
@@ -44,9 +44,9 @@ h2{
 h3{
     margin-top: 20px;
 }
-p{
+/* p{
     max-width: 300px;
-}
+} */
 
 .botao1, .botao2{
     background-color: yellow;
@@ -135,6 +135,7 @@ p{
 
 /* ----------------------------------- */
 
+main :nth-child(4){flex-basis: 100%;}
 #g6{
     display: flex;
     flex-flow: row wrap;
@@ -157,6 +158,11 @@ p{
 #g8 > *{
     flex: auto;
     margin: 5px;
+}
+#g9{
+    display: flex;
+    flex-flow: row wrap;
+    flex: 1 1 212px;
 }
 #g9 > *{
     margin: 5px;
@@ -208,11 +214,6 @@ img{
 
 
 @media screen and (min-width: 768px) {
-    #g9{
-        display: flex;
-        flex-flow: column wrap;
-        max-height: 500px;
-    }
     img{
         width: 40vw;
     }

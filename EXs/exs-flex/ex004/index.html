@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conteúdo flexível</title>
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        article{
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            background-color: lightgray;
+            padding: 10px;
+        }
+        article > *{
+            flex: auto;
+        }
+        article .grupo{
+            display: flex;
+            flex-flow: row wrap-reverse;
+            justify-content: center;
+        }
+        article .conjunto{
+            flex: 1 1 500px;
+        }
+        article img{
+            max-width: 300px;
+            margin-bottom: 10px;
+        }
+        article iframe{
+            max-width: 300px;
+            flex: 1 1 auto;
+        }
+    </style>
+
+</head>
+<body>
+    <main>
+        <h1>Site com com conteúdo flexível</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia accusantium, laborum aliquam, recusandae quisquam consequatur enim sint doloribus, maxime dolore voluptatum maiores error dolorum ipsum autem. Beatae porro nemo rem.</p>
+        <article>
+            <div class="grupo">
+                <div class="conjunto">
+                    <h2>Media > text</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate fuga temporibus eum nemo culpa, nihil provident vitae quibusdam dicta autem odit porro saepe, excepturi rerum ratione quisquam. Natus, doloremque animi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique eveniet libero doloribus cumque. Dolorum tenetur nesciunt officiis aspernatur inventore cumque eum rerum illum nisi accusantium mollitia et, expedita similique alias?</p>
+                </div>
+                <img src="imagem-exemplo.jpg" alt="imagem qualquer">
+            </div>
+            <div class="conjunto">
+                <h2>Text > media</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, dignissimos quae. Libero, laudantium quas porro animi odit modi, voluptates consectetur voluptatem possimus velit vitae nam repudiandae excepturi nobis facere iure.</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo dolorum quia sunt commodi nemo blanditiis quidem assumenda? Corrupti sint vitae modi. Voluptate consequuntur omnis assumenda rem ducimus ex dolor tempore?</p>
+            </div>
+            <iframe width="424" height="238" src="https://www.youtube.com/embed/Ldl_CvMGmEA" title="🥇 TOP 10 Cursos Grátis para fazer na área de Tecnologia ✋🤚" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </article>
+        <h2>título qualquer</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam illum vel, ducimus molestias et porro pariatur? Aut accusamus necessitatibus nostrum quae quis id eveniet natus fugit ad rerum? Provident, doloremque?</p>
+    </main>
+</body>
+</html>
