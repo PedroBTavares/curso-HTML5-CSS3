@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.conjunto{
+    border-top: solid 10px rgba(00, 00, 00, .25);
+    padding-top: 20px;
+}
+.grupo{
+    border: solid 2px black;
+}
+.pai{
+    display: grid;
+    grid-gap: 5px;
+    padding: 10px;
+    border: 2px solid blue;
+    margin: 10px;
+    background-color: rgb(255, 255, 100);
+}
+.filho{
+    background-color: white;
+    padding: 5px;
+    border: solid 1px black;
+}
+
+/* ------------------------------------- */
+
+#g1{
+    display: flex;
+    flex-flow: row wrap;
+}
+#g1 > *{
+    flex: 1 1 200px;
+}
+#p1{
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 50px 50px 50px;
+}
+#p2{
+    grid-template-columns: 30px 60px auto;
+    grid-template-rows: 50px;
+}
+#p3{
+    align-self: flex-start;
+    grid-template-columns: auto auto 100px;
+    grid-template-rows: 50px 20px;
+}
